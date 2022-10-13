@@ -47,7 +47,12 @@ fn update(msg: Msg, model: &mut Model, _: &mut impl Orders<Msg>) {
 
 // `view` describes what to display.
 fn view(model: &Model) -> Node<Msg> {
-    h1!("hi")
+    section![
+        id!("hi"),
+        h1!("Simple Web Page"),
+        h2!("For experimenting :)"),
+        button!("Button"),
+    ]
     //div![
     //    "This is a counter: ",
     //    C!["counter"],
